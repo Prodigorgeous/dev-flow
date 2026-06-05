@@ -1,0 +1,21 @@
+{
+  "name": "dev-flow",
+  "version": "2.0.0",
+  "description": "A global development workflow orchestrator that enforces a six-phase role-playing pipeline: multi-persona product team discussion → PRD, tech lead decomposition → task breakdown, developer implementation → code, QA testing → test report, review board → merge/rework decision. Each phase pauses for user confirmation. Also provides /dev-flow command for interactive configuration management.",
+  "author": {
+    "name": "22527"
+  },
+  "license": "MIT",
+  "keywords": [
+    "workflow",
+    "pipeline",
+    "role-play",
+    "product-management",
+    "quality-assurance",
+    "dev-flow",
+    "sop",
+    "orchestration"
+  ],
+  "commands": ["./commands"],
+  "skills": ["./skills/dev-flow"]
+}
