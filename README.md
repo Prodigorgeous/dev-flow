@@ -51,8 +51,8 @@ A Claude Code plugin that orchestrates a **six-phase role-playing development pi
 
 ```bash
 # In Claude Code — install globally (user scope)
-/plugin marketplace add <your-username>/dev-flow
-/plugin install dev-flow@dev-flow --scope user
+/plugin marketplace add Prodigorgeous/dev-flow
+/plugin install dev-flow@dev-flow-marketplace --scope user
 ```
 
 After installation, the plugin activates immediately. No further setup required.
