@@ -1,8 +1,8 @@
 ---
-# Dev-Flow Pipeline Configuration
-# Copy this file to ~/.claude/dev-flow.local.md (user home directory)
+# Set-Workflow Pipeline Configuration
+# Copy this file to ~/.claude/set-workflow.local.md (user home directory)
 # Then customize the fields below to control your pipeline.
-# Manage via /dev-flow command or edit manually.
+# Manage via /set-workflow command or edit manually.
 
 # Skills to auto-load at Claude Code startup (all projects)
 auto_load_skills: []
@@ -33,11 +33,11 @@ product_team:
 strict_mode: false
 ---
 
-# Dev-Flow Pipeline Configuration
+# Set-Workflow Pipeline Configuration
 
 ## What This File Does
 
-This configuration governs the dev-flow six-phase development pipeline:
+This configuration governs the set-workflow six-phase development pipeline:
 1. **产品 (Product)** — Multi-persona discussion → PRD
 2. **研发 (Tech Lead)** — Task decomposition
 3. **开发 (Developer)** — Implementation
@@ -47,24 +47,24 @@ This configuration governs the dev-flow six-phase development pipeline:
 
 ## Quick Start
 
-1. Copy this file to `~/.claude/dev-flow.local.md`
+1. Copy this file to `~/.claude/set-workflow.local.md`
 2. Customize the YAML frontmatter above
 3. Start using Claude Code — the pipeline activates automatically
-4. Use `/dev-flow` to manage settings interactively
+4. Use `/set-workflow` to manage settings interactively
 
 ## Interactive Commands
 
 ```bash
-/dev-flow                          # View current pipeline status
-/dev-flow add code-review          # Add a skill to auto-load
-/dev-flow remove simplify          # Remove a skill
-/dev-flow list                     # List auto-loaded skills
-/dev-flow product list             # View product team
-/dev-flow product add <name>       # Add a product persona
-/dev-flow product remove <name>    # Remove a product persona
-/dev-flow product preset default   # Reset to default 5-role team
-/dev-flow product preset lean      # Use lean 2-role team
-/dev-flow strict on                # Enable strict mode
-/dev-flow strict off               # Disable strict mode
-/dev-flow reset                    # Reset to factory defaults
+/set-workflow                          # View current pipeline status
+/set-workflow add code-review          # Add a skill to auto-load
+/set-workflow remove simplify          # Remove a skill
+/set-workflow list                     # List auto-loaded skills
+/set-workflow product list             # View product team
+/set-workflow product add <name>       # Add a product persona
+/set-workflow product remove <name>    # Remove a product persona
+/set-workflow product preset default   # Reset to default 5-role team
+/set-workflow product preset lean      # Use lean 2-role team
+/set-workflow strict on                # Enable strict mode
+/set-workflow strict off               # Disable strict mode
+/set-workflow reset                    # Reset to factory defaults
 ```

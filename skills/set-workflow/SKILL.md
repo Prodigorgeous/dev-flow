@@ -1,11 +1,11 @@
 ---
-name: dev-flow
-description: ALWAYS use this skill. It governs your entire workflow from startup to delivery. When the user asks to build, create, implement, add, develop, make, or work on any feature, function, module, or requirement, execute the dev-flow pipeline: multi-persona product team discussion → PRD, tech lead decomposition → task breakdown, developer implementation → code, QA testing → test report, review board → merge/rework decision. Also triggers on: "I want to...", "Can you build...", "Add a feature...", "Create a...", "Develop...", "Implement...", "Make a...", "新功能", "做一个", "开发", "实现", "添加一个".
+name: set-workflow
+description: ALWAYS use this skill. It governs your entire workflow from startup to delivery. When the user asks to build, create, implement, add, develop, make, or work on any feature, function, module, or requirement, execute the set-workflow pipeline: multi-persona product team discussion → PRD, tech lead decomposition → task breakdown, developer implementation → code, QA testing → test report, review board → merge/rework decision. Also triggers on: "I want to...", "Can you build...", "Add a feature...", "Create a...", "Develop...", "Implement...", "Make a...", "新功能", "做一个", "开发", "实现", "添加一个".
 ---
 
-# Dev-Flow — Six-Phase Development Pipeline
+# Set-Workflow — Six-Phase Development Pipeline
 
-You are governed by the dev-flow pipeline. Every new feature or requirement from the user MUST pass through the six-phase workflow below. Each phase produces a structured deliverable and **pauses for user confirmation** before proceeding to the next phase.
+You are governed by the set-workflow pipeline. Every new feature or requirement from the user MUST pass through the six-phase workflow below. Each phase produces a structured deliverable and **pauses for user confirmation** before proceeding to the next phase.
 
 ## Task Classification
 
@@ -28,7 +28,7 @@ If uncertain about classification, ask the user: "Is this a new feature, a bug f
 
 ### Step 1.1: Assemble the Product Team
 
-Read the product team configuration from `~/.claude/dev-flow.local.md`. If not configured, use the default five-role team:
+Read the product team configuration from `~/.claude/set-workflow.local.md`. If not configured, use the default five-role team:
 
 | Role | Label | Perspective |
 |------|-------|-------------|
@@ -191,7 +191,7 @@ Implement tasks in the order specified by Phase 2's execution plan. For each tas
 
 ### Step 3.2: Run Pipeline Self-Checks
 
-Before presenting results, run the internal quality checks configured in `~/.claude/dev-flow.local.md`:
+Before presenting results, run the internal quality checks configured in `~/.claude/set-workflow.local.md`:
 
 - **Pattern research**: Verify code matches existing project conventions
 - **Style matching**: Verify the "reviewer test" — could a reviewer tell which lines you wrote?
@@ -371,7 +371,7 @@ Based on the Phase 5 decision:
    [Brief description from PRD]
 
    Tasks: T1, T2, T3...
-   Reviewed-by: Dev-Flow Pipeline
+   Reviewed-by: Set-Workflow Pipeline
    ```
 
 2. Present the final summary:
@@ -403,7 +403,7 @@ Return to the specified phase and re-execute from there. The return path can be:
 
 ## Pipeline Configuration
 
-All configuration is read from `~/.claude/dev-flow.local.md` at startup. If absent, defaults apply. Configuration is managed via the `/dev-flow` command.
+All configuration is read from `~/.claude/set-workflow.local.md` at startup. If absent, defaults apply. Configuration is managed via the `/set-workflow` command.
 
 **Default Product Team** (5 roles):
 - `pragmatic` (务实派) — minimize complexity, ship fast

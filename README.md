@@ -1,4 +1,4 @@
-# Dev-Flow
+# Set-Workflow
 
 A Claude Code plugin that orchestrates a **six-phase role-playing development pipeline**. Every new feature passes through Product → Tech Lead → Developer → QA → Review → Merge, with each phase producing a structured deliverable and pausing for your confirmation.
 
@@ -45,14 +45,14 @@ A Claude Code plugin that orchestrates a **six-phase role-playing development pi
 - **每阶段确认** — 每个阶段结束后暂停，你审阅通过才进入下一阶段
 - **结构化交付物** — 每阶段产出标准格式文档（PRD、任务清单、测试报告、评审决策）
 - **智能分类** — 新功能走完整 6 阶段，Bug 修复走轻量 3 阶段，纯对话跳过
-- **交互式配置** — `/dev-flow` 命令管理所有设置
+- **交互式配置** — `/set-workflow` 命令管理所有设置
 
 ## Installation
 
 ```bash
 # In Claude Code — install globally (user scope)
 /plugin marketplace add Prodigorgeous/dev-flow
-/plugin install dev-flow@dev-flow-marketplace --scope user
+/plugin install set-workflow@prodigal --scope user
 ```
 
 After installation, the plugin activates immediately. No further setup required.
@@ -62,15 +62,15 @@ After installation, the plugin activates immediately. No further setup required.
 ### Interactive (Recommended)
 
 ```bash
-/dev-flow                          # View current status
-/dev-flow add code-review          # Add auto-load skill
-/dev-flow product preset default   # Set up product team
-/dev-flow strict on                # Enable strict mode
+/set-workflow                          # View current status
+/set-workflow add code-review          # Add auto-load skill
+/set-workflow product preset default   # Set up product team
+/set-workflow strict on                # Enable strict mode
 ```
 
 ### Manual
 
-Create `~/.claude/dev-flow.local.md`:
+Create `~/.claude/set-workflow.local.md`:
 
 ```yaml
 ---
@@ -95,7 +95,7 @@ strict_mode: false
 
 ## Usage
 
-Just use Claude Code normally. Dev-Flow activates when you request a new feature:
+Just use Claude Code normally. Set-Workflow activates when you request a new feature:
 
 | You say | Pipeline |
 |---------|----------|
@@ -116,16 +116,16 @@ At each phase, you'll see the structured deliverable and a request for confirmat
 | 📊 Business | 商业派 | Market value, conversion, retention |
 | ⚙️ Tech-Aware | 技术派 | Feasibility, compatibility, security |
 
-Customize via `/dev-flow product add/remove` or edit your config file.
+Customize via `/set-workflow product add/remove` or edit your config file.
 
 ## Documentation
 
 | File | Content |
 |------|---------|
-| `skills/dev-flow/SKILL.md` | Core pipeline instructions |
-| `skills/dev-flow/references/default-pipeline.md` | Full pipeline rationale and design philosophy |
-| `skills/dev-flow/references/config-guide.md` | Complete configuration reference |
-| `skills/dev-flow/examples/dev-flow.local.md` | Template configuration file |
+| `skills/set-workflow/SKILL.md` | Core pipeline instructions |
+| `skills/set-workflow/references/default-pipeline.md` | Full pipeline rationale and design philosophy |
+| `skills/set-workflow/references/config-guide.md` | Complete configuration reference |
+| `skills/set-workflow/examples/set-workflow.local.md` | Template configuration file |
 
 ## License
 

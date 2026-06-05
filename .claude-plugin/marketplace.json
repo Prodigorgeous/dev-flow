@@ -1,22 +1,22 @@
 {
-  "name": "dev-flow-marketplace",
+  "name": "prodigal",
   "owner": {
     "name": "Prodigorgeous"
   },
   "metadata": {
-    "description": "Dev-Flow plugin marketplace — a six-phase role-playing development pipeline for Claude Code",
+    "description": "Prodigal marketplace — Claude Code plugins by Prodigorgeous",
     "version": "2.0.0"
   },
   "plugins": [
     {
-      "name": "dev-flow",
+      "name": "set-workflow",
       "source": "./",
       "description": "A global development workflow orchestrator that enforces a six-phase role-playing pipeline: multi-persona product team discussion → PRD, tech lead decomposition → task breakdown, developer implementation → code, QA testing → test report, review board → merge/rework decision. Each phase pauses for user confirmation.",
       "version": "2.0.0",
       "author": {
         "name": "Prodigorgeous"
       },
-      "keywords": ["workflow", "pipeline", "role-play", "product-management", "quality-assurance", "dev-flow"],
+      "keywords": ["workflow", "pipeline", "role-play", "product-management", "quality-assurance"],
       "category": "workflow",
       "license": "MIT"
     }

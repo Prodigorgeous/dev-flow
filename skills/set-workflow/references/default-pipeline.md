@@ -1,6 +1,6 @@
 # Default Pipeline Specification — Full Rationale
 
-This document explains the design rationale behind each phase and step of the dev-flow six-phase pipeline. Loaded on demand when deeper context is needed.
+This document explains the design rationale behind each phase and step of the set-workflow six-phase pipeline. Loaded on demand when deeper context is needed.
 
 ---
 
@@ -8,7 +8,7 @@ This document explains the design rationale behind each phase and step of the de
 
 Traditional development workflows separate concerns across teams: product defines what to build, engineering figures out how, development builds it, QA validates it, and a review board decides if it ships. Each team brings a distinct perspective that catches issues the others miss.
 
-Dev-Flow replicates this structure by having Claude role-play each team in sequence. The role-playing constraint forces the model to:
+Set-Workflow replicates this structure by having Claude role-play each team in sequence. The role-playing constraint forces the model to:
 1. **Consider the problem from multiple angles** before writing code — product fit, technical feasibility, user experience, business value
 2. **Produce intermediate artifacts** (PRD, task breakdown, test report) that the user can inspect and correct before code is written
 3. **Separate concerns** — the developer doesn't decide what to build (product does), and the reviewer isn't the same person who wrote the code

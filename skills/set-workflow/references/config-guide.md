@@ -1,14 +1,14 @@
-# Dev-Flow Configuration Guide
+# Set-Workflow Configuration Guide
 
-Complete reference for configuring the dev-flow pipeline.
+Complete reference for configuring the set-workflow pipeline.
 
 ---
 
 ## Configuration File
 
-**Location**: `~/.claude/dev-flow.local.md` (user-global, applies to all projects)
+**Location**: `~/.claude/set-workflow.local.md` (user-global, applies to all projects)
 **Format**: YAML frontmatter inside a Markdown file
-**Management**: Via `/dev-flow` command or manual editing
+**Management**: Via `/set-workflow` command or manual editing
 **Required**: No — if absent, all defaults apply
 
 The file is user-global (in your home directory `.claude/`), meaning one configuration applies to every project you work on. This is by design: the pipeline is your personal development workflow standard, not a per-project setting.
@@ -87,7 +87,7 @@ Defines the personas that participate in the Phase 1 product team discussion.
 
 **Adding a persona**:
 ```bash
-/dev-flow product add security-expert
+/set-workflow product add security-expert
 ```
 You will be prompted for the label and perspective.
 
@@ -101,7 +101,7 @@ product_team:
 
 **Removing a persona**:
 ```bash
-/dev-flow product remove security-expert
+/set-workflow product remove security-expert
 ```
 
 **Preset teams**:
@@ -135,22 +135,22 @@ Controls whether pipeline phase failures block progression.
 
 **Toggle**:
 ```bash
-/dev-flow strict on
-/dev-flow strict off
+/set-workflow strict on
+/set-workflow strict off
 ```
 
 ---
 
 ## Configuration File Location
 
-The file `~/.claude/dev-flow.local.md` is stored in your home directory:
+The file `~/.claude/set-workflow.local.md` is stored in your home directory:
 
 | Platform | Path |
 |----------|------|
-| macOS / Linux | `~/.claude/dev-flow.local.md` |
-| Windows | `C:\Users\<username>\.claude\dev-flow.local.md` |
+| macOS / Linux | `~/.claude/set-workflow.local.md` |
+| Windows | `C:\Users\<username>\.claude\set-workflow.local.md` |
 
-This is user-global scope — settings apply to every project. If you want project-specific overrides in the future, create `.claude/dev-flow.local.md` in the project root with only the fields you want to override.
+This is user-global scope — settings apply to every project. If you want project-specific overrides in the future, create `.claude/set-workflow.local.md` in the project root with only the fields you want to override.
 
 ---
 
@@ -227,7 +227,7 @@ strict_mode: false
 To restore factory defaults:
 
 ```bash
-/dev-flow reset
+/set-workflow reset
 ```
 
-This removes `~/.claude/dev-flow.local.md` and falls back to all default values. Prompts for confirmation before executing.
+This removes `~/.claude/set-workflow.local.md` and falls back to all default values. Prompts for confirmation before executing.

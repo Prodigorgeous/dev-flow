@@ -1,9 +1,9 @@
 {
-  "name": "dev-flow",
+  "name": "set-workflow",
   "version": "2.0.0",
-  "description": "A global development workflow orchestrator that enforces a six-phase role-playing pipeline: multi-persona product team discussion → PRD, tech lead decomposition → task breakdown, developer implementation → code, QA testing → test report, review board → merge/rework decision. Each phase pauses for user confirmation. Also provides /dev-flow command for interactive configuration management.",
+  "description": "A global development workflow orchestrator that enforces a six-phase role-playing pipeline: multi-persona product team discussion → PRD, tech lead decomposition → task breakdown, developer implementation → code, QA testing → test report, review board → merge/rework decision. Each phase pauses for user confirmation. Also provides /set-workflow command for interactive configuration management.",
   "author": {
-    "name": "22527"
+    "name": "Prodigorgeous"
   },
   "license": "MIT",
   "keywords": [
@@ -17,5 +17,5 @@
     "orchestration"
   ],
   "commands": ["./commands"],
-  "skills": ["./skills/dev-flow"]
+  "skills": ["./skills/set-workflow"]
 }
