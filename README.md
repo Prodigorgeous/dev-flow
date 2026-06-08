@@ -51,7 +51,7 @@ A Claude Code plugin that orchestrates a **six-phase role-playing development pi
 
 ```bash
 # In Claude Code — install globally (user scope)
-/plugin marketplace add Prodigorgeous/dev-flow
+/plugin marketplace add Prodigorgeous/prodigal
 /plugin install set-workflow@prodigal --scope user
 ```
 
